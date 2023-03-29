@@ -1,21 +1,17 @@
-package com.onlineshopping.product.service.model;
+package com.onlineshopping.product.service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 
-@Document(value = "product")
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Data
-public class Product {
-    @Id
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ProductResponse {
     private String id;
     private String name;
     private String description;
